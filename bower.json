@@ -1,0 +1,29 @@
+{
+  "name": "content-widgets",
+  "version": "0.0.0",
+  "homepage": "https://github.com/so-sure/so-sure-widget",
+  "authors": [
+    "Patrick McAndrew <patrick@so-sure.com>"
+  ],
+  "description": "so-sure Widget",
+  "main": "sosure.js",
+  "moduleType": [
+    "es6",
+    "globals"
+  ],
+  "keywords": [
+    "so-sure"
+  ],
+  "license": "Apache 2.0",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "cleanslate": "git://github.com/premasagar/cleanslate.git#~0.10.1"
+  }
+}

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>so-sure Test</title>	
+    <style>
+	  .center {text-align: center; margin-left: auto; margin-right: auto; margin-bottom: auto; margin-top: auto; bckground-color: white; padding: 20px; border-radius: 10px;}
+	  body {background-color: #252c31; color: #FFF;}
+	  h1,h2 { color: #fff }
+	</style>
+<body>
+
+<h2>Leaderboard: 728x90</h2>
+<div id="sosure-display-leaderboard">
+so-sure Logo
+</div>
+
+<h2>Wide Rectange: 300x250</h2>
+<div id="sosure-display-wide-rectangle">
+so-sure Logo
+</div>
+
+<h2>Slim Rectange: 250x300</h2>
+<div id="sosure-display-slim-rectangle">
+so-sure Logo
+</div>
+
+<h2>Wide Skyscraper<br />160x600</h2>
+<div id="sosure-display-skyscaper">
+so-sure Logo
+</div>
+
+<script type="text/javascript">(function(d, t) {
+var s = d.createElement(t);
+s.src = 'lib/sosure.js';
+s.onload = s.onreadystatechange = function() {
+var rs = this.readyState; if (rs) if (rs != 'complete') if (rs != 'loaded') return;
+try {
+var options = {
+'apiToken': ''
+};
+var sosureL = new SoSure.widget(options.apiToken);
+var sosureWR = new SoSure.widget(options.apiToken);
+var sosureSR = new SoSure.widget(options.apiToken);
+var sosureS = new SoSure.widget(options.apiToken);
+sosureL.display('MediumRectangle', {displayElement: 'sosure-display-wide-rectangle'});
+sosureSR.display('SlimRectangle', {displayElement: 'sosure-display-slim-rectangle'});
+sosureL.display('Leaderboard', {displayElement: 'sosure-display-leaderboard'});
+sosureS.display('WideSkyscraper', {displayElement: 'sosure-display-skyscaper'});
+} catch (e) {alert(e);}};
+var head = d.getElementsByTagName('head')[0]; head.appendChild(s);
+})(document, 'script');</script>
+
+</body>
+</html>
