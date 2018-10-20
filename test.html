@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta charset="UTF-8" />
 	<title>so-sure Test</title>	
     <style>
 	  .center {text-align: center; margin-left: auto; margin-right: auto; margin-bottom: auto; margin-top: auto; bckground-color: white; padding: 20px; border-radius: 10px;}
@@ -14,8 +15,8 @@
 so-sure Logo
 </div>
 
-<h2>Wide Rectange: 300x250</h2>
-<div id="sosure-display-wide-rectangle">
+<h2>Medium Rectange: 300x250</h2>
+<div id="sosure-display-medium-rectangle">
 so-sure Logo
 </div>
 
@@ -39,10 +40,10 @@ var options = {
 'apiToken': ''
 };
 var sosureL = new SoSure.widget(options.apiToken);
-var sosureWR = new SoSure.widget(options.apiToken);
+var sosureMR = new SoSure.widget(options.apiToken);
 var sosureSR = new SoSure.widget(options.apiToken);
 var sosureS = new SoSure.widget(options.apiToken);
-sosureL.display('MediumRectangle', {displayElement: 'sosure-display-wide-rectangle'});
+sosureMR.display('MediumRectangle', {displayElement: 'sosure-display-medium-rectangle'});
 sosureSR.display('SlimRectangle', {displayElement: 'sosure-display-slim-rectangle'});
 sosureL.display('Leaderboard', {displayElement: 'sosure-display-leaderboard'});
 sosureS.display('WideSkyscraper', {displayElement: 'sosure-display-skyscaper'});
